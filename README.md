@@ -1,3 +1,6 @@
+This project was completed by a group of 4 over the course of one quarter at school.It has 100% code coverage with unit tests on non-gui code, and was developed following TDD and git workflows. The original repository is locked as private, so our git workflow is unfortunately not visible.
+
+
 # 376-ExcellentCatan
 
 Please note - we did most of the project via pair programming. 
