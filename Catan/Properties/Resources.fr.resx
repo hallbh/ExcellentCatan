@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Build_CannotAfford" xml:space="preserve">
+    <value>Choisissez quelque chose que vous pouvez vous permettre! Commencer la construction ou terminer le tour.</value>
+  </data>
+  <data name="Build_Instruction" xml:space="preserve">
+    <value>Commencer la construction ou terminer le tour</value>
+  </data>
+  <data name="DevCard_NoCard" xml:space="preserve">
+    <value>Vous n'avez aucune carte de ce type à jouer!</value>
+  </data>
+  <data name="Item_Brick" xml:space="preserve">
+    <value>Brique</value>
+  </data>
+  <data name="Item_City" xml:space="preserve">
+    <value>Ville</value>
+  </data>
+  <data name="Item_Desert" xml:space="preserve">
+    <value>Désert</value>
+  </data>
+  <data name="Item_KnightCard" xml:space="preserve">
+    <value>Chevalier</value>
+  </data>
+  <data name="Item_Lumber" xml:space="preserve">
+    <value>Bois</value>
+  </data>
+  <data name="Item_MonopolyCard" xml:space="preserve">
+    <value>Monopole</value>
+  </data>
+  <data name="Item_Ore" xml:space="preserve">
+    <value>Minerai</value>
+  </data>
+  <data name="Item_Road" xml:space="preserve">
+    <value>Route</value>
+  </data>
+  <data name="Item_RoadBuildingCard" xml:space="preserve">
+    <value>Construction de Route</value>
+  </data>
+  <data name="Item_Settlement" xml:space="preserve">
+    <value>Règlement</value>
+  </data>
+  <data name="Item_VictoryPointCard" xml:space="preserve">
+    <value>Carte de points de victoire</value>
+  </data>
+  <data name="Item_Wool" xml:space="preserve">
+    <value>Laine</value>
+  </data>
+  <data name="Item_YearOfPlentyCard" xml:space="preserve">
+    <value>Année d'abondance</value>
+  </data>
+  <data name="MoveRobber_Instruction" xml:space="preserve">
+    <value>Sélectionnez un hexagone sur lequel placer le voleur.</value>
+  </data>
+  <data name="MoveRobber_SameHexNotAllowed" xml:space="preserve">
+    <value>Sélectionnez un autre hexagone sur lequel placer le voleur.</value>
+  </data>
+  <data name="PlaceCity_Instruction" xml:space="preserve">
+    <value>placer une ville.</value>
+  </data>
+  <data name="PlaceInitialRoad_Instruction" xml:space="preserve">
+    <value>placer une route à côté de ce règlement.</value>
+  </data>
+  <data name="PlaceRoad_Instruction" xml:space="preserve">
+    <value>placer une route.</value>
+  </data>
+  <data name="PlaceSettlement_Instruction" xml:space="preserve">
+    <value>placer un règlement.</value>
+  </data>
+  <data name="Player_PlayerColor_Blue" xml:space="preserve">
+    <value>Bleu</value>
+  </data>
+  <data name="Player_PlayerColor_Red" xml:space="preserve">
+    <value>Rouge</value>
+  </data>
+  <data name="Player_PlayerColor_White" xml:space="preserve">
+    <value>Blanc</value>
+  </data>
+  <data name="PlayMonopoly_Instruction" xml:space="preserve">
+    <value>Sélectionnez un hexagone pour la ressource que vous souhaitez voler à tout le monde.</value>
+  </data>
+  <data name="PlayYearOfPlenty_Instruction" xml:space="preserve">
+    <value>Sélectionnez un hexagone pour la première ressource que vous souhaitez recevoir.</value>
+  </data>
+  <data name="PlayYearOfPlenty_OutOfAllResources" xml:space="preserve">
+    <value>désolé, il n'y a pas de ressources restantes.</value>
+  </data>
+  <data name="PlayYearOfPlenty_OutOfAResource" xml:space="preserve">
+    <value>désolé, cette ressource est épuisée. Sélectionnez un hexagone différent pour une ressource que vous souhaitez recevoir.</value>
+  </data>
+  <data name="Presenter_DisplayPlayerVictory_VictoryTextFormat" xml:space="preserve">
+    <value>{0} Gagne!</value>
+  </data>
+  <data name="Rob_CannotRobSelf" xml:space="preserve">
+    <value>Voler soi-même n'est pas un choix valable! Sélectionnez une ville ou une localité adjacente!</value>
+  </data>
+  <data name="Rob_Instruction" xml:space="preserve">
+    <value>sélectionnez une ville adjacente ou une colonie dans laquelle voler une ressource.</value>
+  </data>
+  <data name="Rob_MustBeAdjacent" xml:space="preserve">
+    <value>cette ville n'est pas adjacente! Sélectionnez une ville ou une localité adjacente!</value>
+  </data>
+  <data name="Rob_MustSelectCity" xml:space="preserve">
+    <value>il n'y a pas de ville ou de règlement là-bas! Sélectionnez une ville ou une localité adjacente!</value>
+  </data>
+  <data name="Rob_PlayerIsBroke" xml:space="preserve">
+    <value>quel dommage! ce joueur n'avait aucune ressource.</value>
+  </data>
+  <data name="RollDice_Instruction" xml:space="preserve">
+    <value>roulez les dés.</value>
+  </data>
+  <data name="Trade_Instruction" xml:space="preserve">
+    <value>sélectionnez port ou 4:1 pour échanger ou passer à la phase de construction</value>
+  </data>
+  <data name="Item_Grain" xml:space="preserve">
+    <value>Grain</value>
+  </data>
+  <data name="Player_PlayerColor_Orange" xml:space="preserve">
+    <value>Orange</value>
+  </data>
+  <data name="Presenter_KeyValueFormat" xml:space="preserve">
+    <value>{0}: {1}</value>
+  </data>
+  <data name="Presenter_PromptUser_UserMessageFormat" xml:space="preserve">
+    <value>{0}, {1}</value>
+  </data>
+  <data name="PlayRoadBuilding_NoRoads" xml:space="preserve">
+    <value>Vous êtes hors des routes!</value>
+  </data>
+  <data name="PlaceSettlement_Fail" xml:space="preserve">
+    <value>Votre village doit être placé à côté d’une route que vous possédez et à au moins deux routes d’une autre ville.</value>
+  </data>
+  <data name="Build_CannotPlace" xml:space="preserve">
+    <value>désolé, il n’existe pas d’endroits valides pour cela. Commencer la construction ou terminer le tour.</value>
+  </data>
+  <data name="Item_LargestArmyCard" xml:space="preserve">
+    <value>La plus grande armée</value>
+  </data>
+  <data name="Item_LongestRoadCard" xml:space="preserve">
+    <value>La plus longue route</value>
+  </data>
+  <data name="ActionType_Build" xml:space="preserve">
+    <value>Construction</value>
+  </data>
+  <data name="ActionType_RequestCity" xml:space="preserve">
+    <value>Construire la ville</value>
+  </data>
+  <data name="ActionType_RequestRoad" xml:space="preserve">
+    <value>Construire la route</value>
+  </data>
+  <data name="ActionType_RequestSettlement" xml:space="preserve">
+    <value>Construire le règlement</value>
+  </data>
+  <data name="ActionType_RequestDevCard" xml:space="preserve">
+    <value>Acheter carte de dév</value>
+  </data>
+  <data name="ActionType_EndTurn" xml:space="preserve">
+    <value>Fin de tour</value>
+  </data>
+  <data name="ActionType_PlayDevCard" xml:space="preserve">
+    <value>Jouer</value>
+  </data>
+  <data name="ActionType_RollDice" xml:space="preserve">
+    <value>Roulez les dés</value>
+  </data>
+  <data name="ActionType_RequestTradeBasic" xml:space="preserve">
+    <value>Commerce 4:1</value>
+  </data>
+  <data name="Player_None" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="DoTrade_Instruction" xml:space="preserve">
+    <value>sélectionnez l'hex du type de ressource que vous souhaitez recevoir</value>
+  </data>
+  <data name="Trade_NotEnoughToTrade" xml:space="preserve">
+    <value>sélectionnez l'hex du type de ressource que vous souhaitez recevoir</value>
+  </data>
+  <data name="DoTrade_NotEnough" xml:space="preserve">
+    <value>désolé, vous n'en avez pas assez pour échanger. Sélectionnez l'hex du type de ressource que vous souhaitez échanger.</value>
+  </data>
+  <data name="Trade_BankCantTrade" xml:space="preserve">
+    <value>désolé, la banque est à court de ressources. Déplacer pour construire la phase.</value>
+  </data>
+  <data name="StartButton" xml:space="preserve">
+    <value>Début!</value>
+  </data>
+  <data name="Trade_InvalidHarbor" xml:space="preserve">
+    <value>Désolé, vous n'avez pas de village ou de ville à côté de ce port.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Klaus Teuber Catane</value>
+  </data>
+  <data name="DoTrade_SelectWant" xml:space="preserve">
+    <value>Sélectionnez l'hex du type de ressource que vous souhaitez recevoir</value>
+  </data>
+  <data name="PlayYearOfPlenty_Invalid" xml:space="preserve">
+    <value>Vous devez sélectionner un hexagone correspondant à la ressource que vous souhaitez recevoir (le désert ne compte pas!).</value>
+  </data>
+  <data name="DevCard_AlreadyPlayed" xml:space="preserve">
+    <value>Vous avez déjà joué une carte de développement ce tour-ci!</value>
+  </data>
+  <data name="DevCard_BoughtThisTurn" xml:space="preserve">
+    <value>Vous ne pouvez pas jouer une carte de développement que vous avez achetée ce tour-ci!</value>
+  </data>
+  <data name="PlaceCity_Failed" xml:space="preserve">
+    <value>Vous devez sélectionner une ville que vous possédez pour la mettre à niveau</value>
+  </data>
+  <data name="PlaceInitialRoad_NotAdjacent" xml:space="preserve">
+    <value>Votre route doit être placée à côté de votre nouvelle colonie.</value>
+  </data>
+  <data name="PlaceRoad_AlreadyOccupied" xml:space="preserve">
+    <value>Vous ne pouvez pas y placer une route car elle est déjà occupée.</value>
+  </data>
+  <data name="PlaceRoad_Failed" xml:space="preserve">
+    <value>Votre route doit être adjacente à l'une de vos villes, colonies ou routes et ne peut pas traverser les villes ou les colonies d'un autre joueur.</value>
+  </data>
+  <data name="PlaceRoad_NotPath" xml:space="preserve">
+    <value>Ce n'est pas un chemin!</value>
+  </data>
+  <data name="PlaceInitialSettlement_InvalidLocation" xml:space="preserve">
+    <value>votre établissement doit être à au moins deux routes des autres établissements.</value>
+  </data>
+  <data name="PlaceInitialSettlement_NotIntersection" xml:space="preserve">
+    <value>les colonies doivent être placées sur des intersections.</value>
+  </data>
+  <data name="PlayKnightCard_ReceivedLargestArmy" xml:space="preserve">
+    <value>Vous avez reçu la plus grande carte d'armée.</value>
+  </data>
+  <data name="PlayRoadBuilding_SecondInstruction" xml:space="preserve">
+    <value>Placez la deuxième route.</value>
+  </data>
+  <data name="PlayYearOfPlenty_SecondInstruction" xml:space="preserve">
+    <value>Sélectionnez un hexagone pour la deuxième ressource que vous souhaitez recevoir.</value>
+  </data>
+  <data name="TurnState_GeneralInvalidInput" xml:space="preserve">
+    <value>Vous avez sélectionné une action ou une cible non valide pour une action. Veuillez réessayer.</value>
+  </data>
+</root>

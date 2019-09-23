@@ -1,0 +1,17 @@
+﻿{
+  "Road": 60,
+  "Settlement": 20,
+  "City": 16,
+  "Lumber": 19,
+  "Ore": 19,
+  "Wool": 19,
+  "Brick": 19,
+  "Grain": 19,
+  "KnightCard": 14,
+  "VictoryPointCard": 5,
+  "RoadBuildingCard": 2,
+  "YearOfPlentyCard": 2,
+  "MonopolyCard": 2,
+  "LongestRoadCard": 1,
+  "LargestArmyCard": 1 
+}

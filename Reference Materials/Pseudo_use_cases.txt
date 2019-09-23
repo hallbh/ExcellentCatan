@@ -1,0 +1,108 @@
+Before Turn 0:
+	Show tile roll numbers on GUI (and maybe resource type in text?)
+
+Turn 0:
+	Phase 1: For player {1, 2, 3, 4, 4, 3, 2, 1}
+		A. Place settlement
+			1. Prompt on GUI
+			2. Wait for click on intersection
+			3. Check if it is a valid position to place a settlement
+			4a. If it is valid place it in the board data structure
+				- Color the appropriate intersection that player's color
+			4b. If it is not, display settlement placement rules and go to step 2
+		B. Place road adjacent to that settlement
+			1. Prompt on GUI
+			2. Wait for click on path
+			3. Verify path is adjacent to settlement placed in A.
+			4. If it is, go to 5a, if it is not, go to 5b
+			5a. Place the path in the data structure
+			6a. Color the respective path the player's color on the board and go to Phase 2
+			5b. Display "Road must be played adjacent to the settlement you just placed"
+			6b. Go to step 2.
+	Phase 2: Distribute resources from the bank to the players based on adjacent tiles
+		A. Iterate over all hexes and call DistributeResources()
+
+	Phase 3: Begin play
+
+Turn 1: For player {1, 2, 3, 4}
+	Phase 1: Roll for resources / Robber
+		1. Prompt die roll
+		2. Wait for click on roll die
+		3. Calculate die roll
+		4. Display result of die roll on GUI
+		6. If a 7 is rolled go to 7, else go to 8.
+		7. Active player moves the robber
+			a. Prompt Hex Selection for robber placement
+			b. Move the robber unless it is the same tile it already inhabits
+			c. From the new tile, select a player to steal a resource from
+		8. Resources are distributed
+			a. For each hex of the number that is rolled, if the robber is not present,
+			   iterate over adjacent intersection and distribute resources
+
+	Phase 2: Trading Phase
+		A. Trade with another player
+			1. Player A selects "Trade with another player"
+			2. GUI prompts which player to ask for a trade with (Player B)
+			3. Player A selects which resources they wish to trade away, and what they want in
+			   return
+			4. Player B is prompted to Accept or Decline the trade
+			5. If Player B selects Decline, go to 6a, if Player B selects Accept go to 6b
+			6a. Player A may either repeat from step A or B or Proceed to Phase 3.
+			6b. Resources are exchanged between the players, Player A may repeat step A or B or 
+			    Proceed to Phase 3.
+
+		B. Trade with a harbor
+			1. Player selects "Trade with bank"
+			2. Trade options are displayed by harbor availability.
+			3. Player selects 4:1, 3:1, or 2:1 with a specific resource
+			4. Player selects what resource they wish to trade away, and which resource they
+			   want in return.
+
+	Phase 3: Building Phase
+		Case 1: Player builds a road
+			1. Player selects "Build a Road"
+			2. If the player has 1 Lumber and 1 Brick, return these resources to the bank
+			   and move to step 3. Otherwise notify the player that they have insufficient
+			   resources and return to Phase 3.
+			3. Prompt the player to place their road
+			4. Wait for click on a path
+			5. Check if path is a valid position for a new road owned by the active player
+			6a. If it is valid place it in the board data structure
+				- Color the appropriate intersection that player's color
+			6b. If it is not, display road placement rules and go to step 4
+			7. Check for longest road
+
+		Case 2: Player builds a settlement
+			1. Player selects "Build a Settlement"
+			2. If the player has 1 Lumber, 1 Brick, 1 Wool, and 1 Grain return these resources 
+			   to the bank and move to step 3. Otherwise notify the player that they have insufficient resources and return to Phase 3.
+			3. Prompt the player to place their settlement
+			4. Wait for click on an intersection
+			5. Check if intersection is a valid position for a new road owned by the active 
+			   player
+			6a. If it is valid place it in the board data structure
+				- Color the appropriate intersection that player's color
+			6b. If it is not, display settlement placement rules and go to step 4
+
+		Case 3: Player builds a city
+			1. Player selects "Build a City"
+			2. If the player has 3 Grain and 2 Ore, return these resources to the bank and move 
+			   to step 3, otherwise notify the player that they have insufficient resources and return to Phase 3
+			3. Prompt the player to select a settlement they own to replace with a city
+			4. Wait for click on an intersection
+			5. Check if intersection is a settlement owned by player
+			6a. If it is valid, update it to be a city
+				- Color the intersection a darker version of the player's color
+			6b. If the player does not own any settlements, refund resources and cancel the 
+			    action notifying the player that they do not have any settlements to upgrade
+			6c. If it is not a valid position and the player does have a settlement, display
+			    city placement rules and go to step 4
+
+		Case 4: Player buys a dev card
+			1. Player selects "Buy a Dev Card"
+				- If there are no dev cards remaining, display a message and stop.
+			2. If the player has 1 Grain, 1 Ore, and 1 Wool, return these resources to the bank 
+			   and move to step 3, otherwise notify the player of insufficient resources and return to Phase 3
+			3. Give the player a development card from the shuffled deck of dev cards if there are dev cards.
+
+	End Turn passes play to the next player from Phase 1.
